@@ -8,10 +8,7 @@ def abstractmethod(funcobj):
     """A decorator indicating abstract methods.
 
     Requires that the metaclass is ABCMeta or derived from it.  A
-    class that has a metaclass derived from ABCMeta cannot be
-    instantiated unless all of its abstract methods are overridden.
-    The abstract methods can be called using any of the normal
-    'super' call mechanisms.  abstractmethod() may be used to declare
+    class that has a metaclass derived from ABCMeta cannohod() may be used to declare
     abstract methods for properties and descriptors.
 
     Usage:
@@ -94,12 +91,7 @@ else:
 
         Use this metaclass to create an ABC.  An ABC can be subclassed
         directly, and then acts as a mix-in class.  You can also register
-        unrelated concrete classes (even built-in classes) and unrelated
-        ABCs as 'virtual subclasses' -- these and their descendants will
-        be considered subclasses of the registering ABC by the built-in
-        issubclass() function, but the registering ABC won't show up in
-        their MRO (Method Resolution Order) nor will method
-        implementations defined by the registering ABC be callable (not
+ 
         even via super()).
         """
         def __new__(mcls, name, bases, namespace, /, **kwargs):
